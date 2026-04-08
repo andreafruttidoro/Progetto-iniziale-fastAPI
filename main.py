@@ -2,9 +2,9 @@ import joblib
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
 from typing import List
-import models
-import schemas
-import database
+from internal import models
+from internal import schemas
+from internal import database
 
 app = FastAPI(title="NPS Integration & AI Risk System")
 
