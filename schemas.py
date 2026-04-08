@@ -9,8 +9,7 @@ from datetime import datetime
 # Cosa ci aspettiamo dal Frontend quando un utente vota
 class FeedbackCreate(BaseModel):
     score: int
-    score: int = Field(..., ge=0, le=10,
-                       description="Il voto deve essere tra 0 e 10")
+    score: int = Field(..., ge=0, le=10, description="Il voto deve essere tra 0 e 10")
     comment: Optional[str] = None
     customer_id: int
 
